@@ -1,0 +1,195 @@
+#page-create-point{
+    width: 90%;
+    max-width: 1100px;
+
+
+    margin: 0 auto;
+}
+
+#page-create-point header{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-create-point header a{
+    color: var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#page-create-point header a span{
+    background-image: url('../extras-aula-1/icones/arrow-left.svg');
+    width: 20px;
+    height: 24px;
+    display: flex;
+    margin-right: 16px;
+}
+
+form{
+    background-color: rgb(122, 255, 131);
+
+    margin: 80px auto;
+    padding: 64px;
+
+    border: 2px solid rgb(105, 161, 0);
+
+    border-radius: 20px;
+
+    max-width: 730px;
+
+    transition: 600ms;
+}
+
+form h1{
+    font-size: 36px;
+}
+
+form fieldset {
+    margin-top: 64px;
+
+    border: 0;
+}
+
+form legend{
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+form legend span{
+    color: rgb(0, 122, 122);
+    font-size: 20px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+form legend h2{
+    font-size: 24px;
+}
+
+form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+
+    margin-bottom: 24px;
+}
+
+form .field-group{
+    display: flex;
+}
+
+form input,
+form select{
+    background-color: rgb(210, 255, 125);
+    border:30px rgb(0, 0, 0);
+    padding: 16px 24px;
+    font-size: 19px;
+
+    border-radius: 20px;
+
+    outline: none;
+}
+
+form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+form .field-group .field + .field{
+    margin-left: 24px;
+    
+}
+
+form button{
+    width: 260px;
+    height: 56px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+
+    border: 0;
+
+    margin-top: 40px;
+    transition: background-color 600ms;
+    cursor: pointer;
+
+}
+
+form button:hover{
+    background-color: rgb(255, 238, 1);
+    color: rgb(28, 141, 0);
+    
+}
+
+.items-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.items-grid li{
+    background-color: rgb(255, 225, 125); 
+
+    list-style: none;
+
+    border: 2px solid rgb(25, 107, 0);
+    border-radius: 20px;
+
+    height: 180px;
+
+    padding: 32px 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.items-grid span{
+    margin-top: 12px;
+    flex: 1;
+    font: 20px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--title-color);
+}
+
+.items-grid li.selected{
+    background-color: rgb(0, 255, 255);
+    /* filter: blur(5px); */
+    /* background: linear-gradient(#14ffe9,#ffeb3b,#ff00e0); */
+
+    border: 6px solid rgb(25, 107, 0);
+}
+
+.items-grid li img,
+.items-grid li span{
+    pointer-events: none;
+}
+
+/* filter: blur(5px); */
+    /* background: linear-gradient(#14ffe9,#ffeb3b,#ff00e0); */
