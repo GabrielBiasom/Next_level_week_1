@@ -1,2 +1,2 @@
 # Rocketseat 
-Next Level Week #1 - Discovery
+Next Level Week #1
